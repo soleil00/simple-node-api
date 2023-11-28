@@ -37,5 +37,5 @@ app.use("/users", userRoutes);
 
 app.get("/message/:id", (req, res) => {
   const { id } = req.params;
-  res.send(`u are viewinf message number ${id}`);
+  res.send(`u are viewing message number ${id}`);
 });
