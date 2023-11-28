@@ -11,7 +11,7 @@ Follow these steps to set up and deploy the API:
 ### 1. Clone the Repository
 
 ```bash
-git https://github.com/soleil00/simple-node-api
+git clone https://github.com/soleil00/simple-node-api
 cd simple-node-api
 ```
 
@@ -19,11 +19,10 @@ cd simple-node-api
 
 Create a .env file in the root of your project and add the following variables:
 
-env
-Copy code
-PORT=3000
+```PORT=3000
 MONGODB_URL=mongodb+srv://<mongodb-username>:<mongodb-password-to-specified-user>@cluster0.3jrwzmq.mongodb.net/SoleilDB?retryWrites=true&w=majority
 Make sure to replace <mongodb-username> and <mongodb-password-to-specified-user> with your MongoDB credentials.
+```
 
 ### 3. Deploy to Vercel
 
