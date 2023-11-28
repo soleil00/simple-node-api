@@ -26,7 +26,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("welcome aboard");
+  res.send("welcome aboards");
 });
 
 app.get("/message", (req, res) => {
