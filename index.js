@@ -5,6 +5,7 @@ const cors = require("cors");
 dotenv.config();
 
 const app = express();
+const PORT = process.env.PORT | 2000;
 
 app.use(cors());
 app.use(express.json());
@@ -22,6 +23,6 @@ app.get("/message/:id", (req, res) => {
   res.send(`u are viewinf message number ${id}`);
 });
 
-app.listen(process.env.PORT | 2000, () => {
+app.listen(PORT, () => {
   console.log("server running on port 2000");
 });
